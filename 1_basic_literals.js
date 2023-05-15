@@ -5,9 +5,24 @@
 // console.log(navigator.appVersion);
 // console.log(window);
 
+//Object Literal
 const book1 = {
     title: 'Book One',
     author: 'Tero Dai',
-    year: '2069'
+    year: '2069',
+    getSummary: function(){
+        return `${this.title} was written by ${this.author} in ${this.year}`;
+    }
 };
-console.log(book1);
+
+const book2 = {
+    title: 'Book Two',
+    author: 'Tero Daju',
+    year: '2069',
+    getSummary: function(){
+        return `${this.title} was written by ${this.author} in ${this.year}`;
+    }
+};
+console.log(book2.getSummary());
+console.log(Object.values(book2));
+console.log(Object.keys(book2));
